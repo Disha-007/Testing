@@ -1,0 +1,5 @@
+ApiEndPoint.class
+CommonCategories/Categories.class
+CommonCategories/Category.class
+CommonCategories/CommonCategoriesResponse.class
+BaseTest.class

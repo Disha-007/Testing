@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: TestApiTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 2.566 sec <<< FAILURE!
+testFunction(TestApiTest)  Time elapsed: 1.394 sec  <<< FAILURE!
+java.lang.NoClassDefFoundError: javax/xml/bind/JAXBException
+	at io.restassured.config.ObjectMapperConfig.<init>(ObjectMapperConfig.java:49)
+	at io.restassured.config.RestAssuredConfig.<init>(RestAssuredConfig.java:41)
+	at io.restassured.RestAssured.<clinit>(RestAssured.java:420)
+	at BaseTest.getApi(BaseTest.java:15)
+	at TestApiTest.testFunction(TestApiTest.java:20)
+Caused by: java.lang.ClassNotFoundException: javax.xml.bind.JAXBException
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 41 more
+
